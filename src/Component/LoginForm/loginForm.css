@@ -1,0 +1,109 @@
+.login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100dvh - 78px);
+}
+
+.login-content {
+    padding: 20px;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    width: min(450px,100%);
+}
+
+.login-content h2{
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 30px;
+    color: #274472;
+    text-align: center;
+    font-weight: 700;
+}
+
+.member-group{
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.input-controls {
+    font-size: 16px;
+    line-height: 16px;
+    display: block;
+    width: 100%;
+    padding: 13px 15px;
+    border-radius: 3px;
+    border: 1px solid #274472;
+    cursor: pointer;
+}
+
+.input-controls::placeholder{
+    visibility: hidden;
+}
+
+.input-controls:focus{
+    outline: none;
+}
+
+
+.floating-label {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    line-height: 16px;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.input-controls:not(:placeholder-shown) ~ .floating-label,
+.input-controls:focus ~ .floating-label{
+    font-size: 11px;
+    line-height: 11px;
+    top: 0px;
+    padding: 0 5px;
+    background-color: #fff;
+    font-weight: 700;
+    transition: 0.5s ease-in-out;
+}
+
+.error-control {
+    position: absolute;
+    left: 0px;
+    bottom: -18px;
+}
+
+.error-control .msg{
+    font-size: 12px;
+    line-height: 12px;
+    color: red;
+    font-weight: 600;
+}
+
+.login-btn {
+    font-size: 16px;
+    background-color: transparent;
+    padding: 10px 25px;
+    border: 1px solid #274472;
+    display: block;
+    margin: 0 auto;
+    color: #274472;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.login-btn:hover{
+    background-color: #274472;
+    color: #ffffff;
+}
+
+.login-btn:active{
+    scale: 0.2;
+}
+
+.login-btn[disabled]{
+    pointer-events: none;
+    opacity: 0.4;
+}
