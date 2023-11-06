@@ -1,6 +1,6 @@
 import React from 'react'
 
-function TripCard({tripJson}) {
+function TripCard( { tripJson } ) {
   return (
 
     <div className="container-right">
@@ -21,15 +21,21 @@ function TripCard({tripJson}) {
                 </div>
                 <div className={'trip-left'}>
                   <div className='trip-details'>
-                    <div className={'trip-type'}>{trip.type?.name}</div>
-                    <span className="product-title">{trip.name}</span>
+                    <div className={'trip-top'}>
+                      <div className={'trip-type'}>{trip.type?.name}</div>
+                      <div className='duration'>{trip.duration.value}</div>
+                    </div>
+
+                    <span className="product-title"><strong>{trip.name}</strong></span>
                     <div className='description'>{trip.description}</div>
-                    <div className='duration'>{trip.duration.value}</div>
                   </div>
                   <div className={'trip-right'}>
-                    <div className={'trip-rating'}>{trip.rating}</div>
+                    <div className={'trip-rating'}>Rating : {trip.rating}★</div>
                     <div className={'trip-review'}>{trip.review}</div>
-                    <div className='premium'>{trip.premium?.name}</div>
+                    <button
+                      type='button'
+                      className={'premium'}>{trip.premium?.name}
+                    </button>
                   </div>
                 </div>
               </div>

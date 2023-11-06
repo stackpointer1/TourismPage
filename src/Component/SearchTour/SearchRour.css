@@ -54,5 +54,17 @@
     display: flex;
     font-weight: bold;
 }
+.search-tour{
+    background-color: #274472;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    font-size: 11px;
+    padding: 7px 20px;
+    text-transform: capitalize;
+    border-radius: 3px;
+    width: 104px;
+    height: 37px;
+    margin-left: -27px;
+}
 
 

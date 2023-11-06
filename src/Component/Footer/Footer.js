@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import emailLogo from '../../asset/images/icons8-email-50.png'
+
 function Footer() {
   const [email, setEmail] = useState({ value: '', error: '' })
   const [buttonClicked, setButtonClicked] = useState(false)
@@ -26,26 +27,31 @@ function Footer() {
   return (
     <div className='footer'>
       <div className='email-trigger'>
-        <span>Your Travel Journey Starts Here</span>
-        <div>Sign Up and we will send the best deals to you</div>
-        <img src ={emailLogo} alt={'email-logo'} />
-        <input
-          type={'text'}
-          className={'email'}
-          placeholder={"Enter Your Email"}
-          onChange={( e ) => handleChange(e)}
-          value={email.value}
-        />
+        <img src={emailLogo} alt={'email-logo'}/>
+        <div className='travel-text'>
+          <div className={'bold-text'}> <strong>Your Travel Journey Starts Here</strong></div>
+          <div className={'not-bold'}>Sign Up and we will send the best deals to you</div>
+        </div>
+        <div className={'email'}>
+          <input
+            type={'text'}
+            className={'email'}
+            placeholder={"Enter Your Email"}
+            onChange={( e ) => handleChange(e)}
+            value={email.value}
+          />
+        </div>
+        {email?.error && <span className={'error'}>{email.error}</span>}
+        <button
+          type={'button'}
+          className={'sub-button'}
+          onClick={handleButton}
+          disabled={email.error}
+        >
+          Subscribe
+        </button>
+        {buttonClicked && <span>Subscribed</span>}
       </div>
-      {email?.error && <span className={'error'}>{email.error}</span>}
-      <button
-        type={'button'}
-        className={'sub-button'}
-        onClick={handleButton}
-      >
-        Subscribe
-      </button>
-      {buttonClicked && <span>Subscribed</span>}
       <div>
 
       </div>

@@ -12,7 +12,7 @@ export const TRIP_JSON = [
     duration: {id: 1, value:'30 mins'},
     cancellation: 'Free cancellation',
     type: { id:3, name:'Attraction' },
-    review: '3014 review'
+    review: '3014 reviews'
   },
   {
     id: 2,
@@ -25,7 +25,7 @@ export const TRIP_JSON = [
     duration: {id:4, value :'7 Hour'},
     cancellation: `Free cancellation`,
     type: {id:5, name:'Night Trips'},
-    review:'107 review'
+    review:'107 reviews'
   },
   {
     id: 3,
@@ -38,6 +38,9 @@ export const TRIP_JSON = [
     duration: {id:4, value:'1 day'},
     cancellation: `Free cancellation Cancel up to 24 hr in advance for a full refund`,
     type: { id:4, name:'Day Trips' },
+    review:'1077 reviews'
+
+
   },
   {
     id: 4,
@@ -50,6 +53,8 @@ export const TRIP_JSON = [
     duration: {id:4, value:'9.5 hour'},
     cancellation: 'Free cancellation Cancel up to 48 hr in advance for a full refund ',
     type: { id:4, name:'Day Trips' },
+    review:'307 reviews'
+
   },
   {
     id: 5,
@@ -62,7 +67,9 @@ export const TRIP_JSON = [
     premium: {id:2881, name:`₹ 2,881 per person`},
     duration: {id:2, value:'75 mins'},
     cancellation: 'Free cancellation Cancel up to 24 hr in advance for a full refund',
-    type: {id:1, name:'Guide tour'}
+    type: {id:1, name:'Guide tour'},
+    review:'560 reviews'
+
   },
   {
     id: 6,
@@ -76,6 +83,8 @@ export const TRIP_JSON = [
     duration: {id:2, value:'2.5 hour'},
     cancellation: 'Free cancellation Cancel up to 24 hr in advance for a full refund',
     type: { id:3, name:'Attraction' },
+    review:'345 reviews'
+
   },
   {
     id: 7,
@@ -88,6 +97,8 @@ export const TRIP_JSON = [
     duration: {id:1, value:'1.5 hour'},
     cancellation: 'Free cancellation Cancel up to 24 hr in advance for a full refund',
     type: { id:3, name:'Attraction' },
+    review:'476 reviews'
+
   },
   {
     id: 8,
@@ -99,7 +110,9 @@ export const TRIP_JSON = [
     premium: {id: 1647, name:'₹ 1,647 per person'},
     duration: {id:1,value:'2 hour'},
     cancellation: 'Free cancellation Cancel up to 24 hr in advance for a full refund',
-    type: {id:1, name:'Guide tour'}
+    type: {id:1, name:'Guide tour'},
+    review:'496 reviews'
+
   },
   {
     id: 9,
@@ -113,7 +126,9 @@ export const TRIP_JSON = [
     premium: {id:5145, name:`₹ 5,145 per person`},
     duration: {id:2, value:'4 hour'},
     cancellation: 'Free cancellation Cancel up to 24 hr in advance for a full refund',
-    type: {id:2, name:'Adventure'}
+    type: {id:2, name:'Adventure'},
+    review:'321 reviews'
+
   },
   {
     id: 10,
@@ -127,7 +142,9 @@ export const TRIP_JSON = [
     duration: { id:1, value:'1.5 hour'},
     cancellation: `Free cancellation
     Cancel up to 3 days in advance for a full refund`,
-    type: {id:2, name:'Adventure'}
+    type: {id:2, name:'Adventure'},
+    review:'321 reviews'
+
 
   }
 ]

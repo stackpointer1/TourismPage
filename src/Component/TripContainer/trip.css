@@ -1,6 +1,6 @@
 .card-container {
-    --width-block:201px;
-    --width-inner-block:77px;
+    --width-block: 201px;
+    --width-inner-block: 77px;
     display: flex;
     flex-wrap: wrap;
     border: 1px solid #CCC;
@@ -10,68 +10,174 @@
 .main-container {
     display: flex;
     align-items: flex-start;
-    width: min(1144px,100%);
+    width: min(1144px, 100%);
     margin: 0 auto;
     padding: 40px 0px;
 }
+
 .container-left {
     width: 30%;
 }
 
-.container-left .title{
+.container-left .title {
     margin-bottom: 15px;
 }
 
-.type-filter{
+.type-filter {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
     margin-bottom: 15px;
 }
 
-.type-filter .checkbox-item{
+.type-filter .checkbox-item {
     width: 100%;
     display: flex;
     column-gap: 10px;
 }
 
-.trip-slider{
+.trip-slider {
     margin-bottom: 15px;
 }
 
-.container-right{
+.container-right {
     flex: 1;
 }
 
-.card-wrapper{
+.card-wrapper {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
 }
 
-.card-container .card-logo{
+.card-container .card-logo {
     width: var(--width-block);
 }
 
-.card-container .card-logo img{
+.card-container .card-logo img {
     display: block;
     object-fit: contain;
     width: 100%;
     height: 100%;
 }
 
-.card-container .trip-left{
+.card-container .trip-left {
     width: calc(100% - var(--width-block));
     display: flex;
     flex-wrap: wrap;
     padding-left: 15px;
 }
 
-.card-container .trip-left .trip-details{
+.card-container .trip-left .trip-details {
     width: calc(100% - var(--width-inner-block));
     padding-right: 30px;
 }
 
-.card-container .trip-left .trip-right{
+.card-container .trip-left .trip-right {
     width: var(--width-inner-block);
+
 }
+
+.blank-plan-container.flex.v-align-center {
+    font-size: 20px;
+    font-family: sans-serif;
+    -webkit-box-align: center;
+}
+
+.trip-top {
+    display: flex;
+    gap: 15px;
+    color: gray;
+    font-size: small;
+    margin-bottom: 17px
+}
+
+
+.duration::before {
+    content: ".";
+}
+
+.table-navigator {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 160px
+}
+
+.description {
+    padding: 10px;
+    font-size: 13px;
+}
+
+.trip-right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card-container .trip-right .trip-rating {
+    font-size: 11px;
+    margin-top: 30px
+}
+
+.trip-review {
+    font-size: 13px;
+    width: 100px;
+    height: 40px;
+}
+
+.premium {
+    background-color: #274472;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    font-size: 11px;
+    padding: 7px 20px;
+    text-transform: capitalize;
+    border-radius: 3px;
+    width: 104px;
+    height: 37px;
+    margin-left: -27px;
+}
+
+.trip-footer {
+    display: flex;
+    width: 100%;
+    background-color: #274472;
+    color: white;
+}
+
+.email-trigger {
+    display: flex;
+    gap: 28px;
+    padding: 61px;
+    margin-left:134px
+}
+
+.email {
+    width: 236px;
+    height: 51px;
+    margin-right:15px
+}
+.sub-button{
+    background-color: #274472;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    font-size: 11px;
+    padding: 7px 20px;
+    text-transform: capitalize;
+    border-radius: 3px;
+    width: 104px;
+    height: 37px;
+    margin-left: -27px;
+}
+.error {
+    color: red;
+    margin-left: -143px;
+    margin-top: 56px;
+}
+.bold-text {
+    margin-bottom: 12px;
+    gap: 15px;
+}
+
+
+
