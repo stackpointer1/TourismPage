@@ -11,7 +11,6 @@ function TypeFilter({onChange}) {
             id={item.id}
             name={item.name}
             value={item.id}
-            // checked={selectedItems.includes(item.id)}
             onChange={onChange}
           />
           <label htmlFor={item.id}>{item.name}</label>

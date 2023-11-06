@@ -21,6 +21,21 @@ export const tripType = [
   }
 ]
 
-export const premium=[
-
+export const Duration = [
+  {
+    id:1,
+    name:'upto 1 hr'
+  },
+  {
+    id: 2,
+    name: 'upto 2 to 4 hr'
+  },
+  {
+    id: 3,
+    name: '4 to 6 hr'
+  },
+  {
+    id: 4,
+    name: '6 hr to 1 day'
+  }
 ]

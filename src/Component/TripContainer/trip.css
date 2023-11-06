@@ -1,29 +1,77 @@
 .card-container {
-    border: 1px solid #CCC;
+    --width-block:201px;
+    --width-inner-block:77px;
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
+    border: 1px solid #CCC;
     padding: 16px;
-    margin: 10px;
 }
 
-.trip-image {
-    width: 456px; /* Adjust the image width as needed */
-    height: auto; /* Maintains the aspect ratio */
-    margin-right: 20px; /* Spacing between the image and content */
-}
-.trip-left {
-    flex: 1;
-    display: flow;
-    margin-right: 18px;
-    justify-content: space-between;
-}
 .main-container {
     display: flex;
     align-items: flex-start;
+    width: min(1144px,100%);
+    margin: 0 auto;
+    padding: 40px 0px;
 }
 .container-left {
     width: 30%;
 }
+
+.container-left .title{
+    margin-bottom: 15px;
+}
+
+.type-filter{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.type-filter .checkbox-item{
+    width: 100%;
+    display: flex;
+    column-gap: 10px;
+}
+
+.trip-slider{
+    margin-bottom: 15px;
+}
+
 .container-right{
     flex: 1;
+}
+
+.card-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.card-container .card-logo{
+    width: var(--width-block);
+}
+
+.card-container .card-logo img{
+    display: block;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.card-container .trip-left{
+    width: calc(100% - var(--width-block));
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 15px;
+}
+
+.card-container .trip-left .trip-details{
+    width: calc(100% - var(--width-inner-block));
+    padding-right: 30px;
+}
+
+.card-container .trip-left .trip-right{
+    width: var(--width-inner-block);
 }
